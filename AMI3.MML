@@ -1,0 +1,171 @@
+#mode-26
+#title		"Pursuit (High)"
+#composer	"Noyemi Karlaite"
+#copyright	"(C)Noyemi K"
+
+;===================================
+; FM Tone Data
+;===================================
+
+;AR DR SR RR SL TL KS ML DT
+;AL FB
+
+;[BASS]
+@01={ 
+28,14, 7, 8, 2,33, 0, 1, 7,
+21,15, 6, 7, 4,38, 2, 4, 7,
+25,10, 6, 7, 1,32, 0, 0, 3,
+31,12, 7, 7, 0, 0, 0, 0, 3,
+
+02,02}
+
+;[LEAD]
+@02={ 
+16, 3, 0, 0, 2,20, 0, 4, 7,
+19,12, 0, 6, 1, 1, 0, 8, 3,
+16, 3, 0, 0, 2,16, 0, 3, 3,
+19,12, 0, 6, 1, 2, 0, 6, 7, 
+
+04,03}
+
+;[SYNTH]
+@03={ 
+31, 7, 0, 9, 5,25, 0, 8, 0,
+31,15, 0,14, 1, 2, 0, 6, 4,
+31,16, 0,15, 2,25, 0, 4, 0,
+31,26, 0,14, 2, 0, 0, 4, 1, 
+
+04,02}
+
+;===================================
+; Rhythm Instrument Data
+;===================================
+
+;[KICK]
+@10={ 
+30,26, 0,13,15,26, 0, 1, 0,
+30,28, 0,14,15,37, 0, 6, 3, 
+27,16, 0, 8,15, 5, 0, 0, 0, 
+29,16, 0, 8,15, 0, 0, 0, 0, 
+
+00,00}
+
+;[SNARE]
+@11={ 
+31, 0, 0, 7, 0, 0, 0,15, 0,
+31,15,15, 9, 2, 0, 0,15, 0,
+31,21, 0,15,11,10, 0, 4, 1, 
+31,19,17, 9, 2, 0, 0, 0, 7, 
+
+04,07}
+
+;[HAT CLOSED]
+@12={ 
+
+31,11, 0, 0, 5, 0, 1,15, 0,
+31,17,12, 9, 9, 0, 1, 0, 0,
+31, 0, 0,15, 0, 0, 1, 0, 0,
+25,19,20,15,15, 7, 0,15, 0, 
+
+04,07}
+
+;[HAT OPEN]
+@13={ 
+
+31,15, 0, 9, 1, 0, 0,15, 0,
+31,20, 5,14, 5, 3, 0, 4, 0, 
+31,10, 9, 9, 1, 0, 0,10, 0, 
+31,22, 5,14, 5, 0, 1, 7, 0, 
+
+04,06}
+
+;[RIM SHOT]
+@14={ 
+
+31,11, 0,15,15,37, 1,15, 1, 
+31,12, 0,15,15,40, 1,10, 2, 
+31,17, 0,15,15,13, 2, 0, 3, 
+31,16, 0,15,15, 0, 2, 0, 7, 
+
+00,07}
+
+;===================================
+; Rhythm Macros
+;===================================
+
+k="@10v15o0c"
+s="@11v15o2c"
+o="@13v10o6c"
+c="@12v10o5c"
+r="@14v13o4c"
+
+;===================================
+; Initialize
+;===================================
+q="E0,31,11,0,0,15,0"
+
+A	@t226
+A	K0 k0 MAOF MWOF l16	;p3
+B	K0 k0 MAOF MWOF l16	;p3
+C	K0 k0 MAOF MWOF l16	;p3
+G	K0 k0 MAOF MWOF l16 S1
+H	K0 k0 MAOF MWOF l16 S1
+I	K0 k0 MAOF MWOF l16 S1
+
+;===================================
+; Song Sequence Data
+;===================================
+
+A	L o3@2v11
+A	[$kr8.]12 [$kr8.]3 $sr8$s [$k$c$or]14 $k$c$o@10[o0c32]2 $s$o$s$s
+A	[[$k$c$or $kr$c$c / $k$c$or $kr$cr]4 $k$c$o@10[o0c32]2 $s$r$s$s]6
+
+A	[$kr8.]12 [$kr8.]3 $sr8$s [$k$c$or]14 $k$c$o@10[o0c32]2 $s$o$s$s
+A	[[$k$c$or $kr$c$c / $k$c$or $kr$cr]4 $k$c$o@10[o0c32]2 $s$r$s$s]2
+
+A	[$kr8.]12 [$kr8.]3 $sr8$s [$k$c$or]14 $k$c$o@10[o0c32]2 $s$o$s$s
+A	[[$k$c$or $kr$c$c / $k$c$or $kr$cr]4 $k$c$o@10[o0c32]2 $s$r$s$s]6
+
+B	L o2@1v15
+B	[r1]8
+B	[dr<dr>dr8. <c&drdr8cr / >g8r<d8r>g8 <g8r>g8rc8]2 g8rg8ra8ra8r<c4> dr<dr>dr8. <c&drdr8cr >g8r<d8r>g8 <g8r>g8rc8 <g4r8c4r8d2. r4 >ffr8
+B	o2 [dr<d8&>dr8. <c&drdr8c8 d8rd r8c8rc8r>c8r8 dr<d8>dr8.<c&drdr8c8 >g8rg r8a8rar8 <c&drd]4
+
+B	o2 [[dr<dr>dr8. <c&drdr8cr / >g8r<d8r>g8 <g8r>g8rc8]2 g8rg8ra8ra8r<c4>]2
+B	o2 [dr<dr>dr8. <c&drdr8cr / >g8r<d8r>g8 <g8r>g8rc8]2 g8rg8ra8ra8r<c4> dr<dr>dr8. <c&drdr8cr >g8r<d8r>g8 <g8r>g8rc8 <g4r8c4r8d2. r4 >ffr8
+
+B	o2 [dr<d8&>dr8. <c&drdr8c8 d8rd r8c8rc8r>c8r8 dr<d8>dr8.<c&drdr8c8 >g8rg r8a8rar8 <c&drd]8
+
+C	L o3@2v9
+C	[r1]14 d4r8e4r8f2.&f8r8 ffr8
+C	[d1e1f1e1 d1e1f1g1]2
+
+C	[[@2<crcc rcrc rccr drdr / @3 dr>dr grar r4 grar]2 @3 <gr>gr <crdr r4 grfr]3 o4 @2 crcc rcrc rccr drdr dr>dr grar r4 grar d4r8e4r8f2.&f8r8 ffr8
+
+C	d1e1f1e1 d1e1 d4r8e4r8f2.&f8r8 ffr8 [d1e1f1e1 d1e1f1g1]2 [r1]8
+
+G	L o5 $q v14 @q2
+H	r8 L o5 $q v11 @q2
+I 	r8. L o5 $q v9 @q2
+
+G	[[dr>dr grar r4 drgr <dr>dr grar r4<cr8. / dr>dr grar r4 drgr <dr>dr grar r4 <drcr]2 >drar<dr>er br<er>fr<cr fr8f r4 fr8.fr8.]2
+H	[[dr>dr grar r4 drgr <dr>dr grar r4<cr8. / dr>dr grar r4 drgr <dr>dr grar r4 <drcr]2 >drar<dr>er br<er>fr<cr fr8f r4 fr8.fr8.]2
+I	[[dr>dr grar r4 drgr <dr>dr grar r4<cr8. / dr>dr grar r4 drgr <dr>dr grar r4 <drcr]2 >drar<dr>er br<er>fr<cr fr8f r4 fr8.fr8.]2
+
+G	[o3[r4a4&<d4e4 g8.f8.&e8c4d4 / e4&d+8.&e2&e d4&c8.&d2&d]2 <d4r8>g4r8<d4 >r8g4r8 <c&d4..]2
+H	[o3[r4a4&<d4e4 g8.f8.&e8c4d4 / e4&d+8.&e2&e d4&c8.&d2&d]2 <d4r8>g4r8<d4 >r8g4r8 <c&d4..]2
+I	[o3[r4a4&<d4e4 g8.f8.&e8c4d4 / e4&d+8.&e2&e d4&c8.&d2&d]2 <d4r8>g4r8<d4 >r8g4r8 <c&d4..]2
+
+G	[r1r1r1r1]4
+H	[r1r1r1r1]4
+I	[r1r1r1r1]4
+
+G	[[dr>dr grar r4 drgr <dr>dr grar r4<cr8. / dr>dr grar r4 drgr <dr>dr grar r4 <drcr]2 >drar<dr>er br<er>fr<cr fr8f r4 fr8.fr8.]2
+H	[[dr>dr grar r4 drgr <dr>dr grar r4<cr8. / dr>dr grar r4 drgr <dr>dr grar r4 <drcr]2 >drar<dr>er br<er>fr<cr fr8f r4 fr8.fr8.]2
+I	[[dr>dr grar r4 drgr <dr>dr grar r4<cr8. / dr>dr grar r4 drgr <dr>dr grar r4 <drcr]2 >drar<dr>er br<er>fr<cr fr8f r4 fr8.fr8.]2
+
+G	[o3[r4a4&<d4e4 g8.f8.&e8c4d4 / e4&d+8.&e2&e d4&c8.&d2&d]2 <d4r8>g4r8<d4 >r8g4r8 <c&d4..]2
+H	[o3[r4a4&<d4e4 g8.f8.&e8c4d4 / e4&d+8.&e2&e d4&c8.&d2&d]2 <d4r8>g4r8<d4 >r8g4r8 <c&d4..]2
+I	[o3[r4a4&<d4e4 g8.f8.&e8c4d4 / e4&d+8.&e2&e d4&c8.&d2&d]2 <d4r8>g4r8<d4 >r8g4r8 <c&d4..]2
+
+

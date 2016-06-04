@@ -13,7 +13,7 @@ Included in this repository as examples are AMIx.MML files, which are 26 and 86 
 ##Examples
 
 [AMI2.MO2](https://soundcloud.com/mishkahd/ami2mo2)
-(More to come)
+[Pursuit (High)](http://delmunsoft.tumblr.com/post/145409788028/pc-9801-26k-version-of-pursuit-high-from-the)
 
 ##Documentation
 
