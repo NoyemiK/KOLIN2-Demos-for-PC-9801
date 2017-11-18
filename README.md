@@ -4,18 +4,18 @@
 
 Included in this repository are .MOx and .MML files; the former will play directly on PC-9801 and emulators, provided the KOLIN2 driver is on your system and initialized before play. To initialize KOLIN2 in DOS, navigate to the directory containing KOLIN2.COM and type `KOLIN2` to load the driver.
 
-##Using KOLIN2
+## Using KOLIN2
 
 To compile an MML source file to a playable driver instruction file for KOLIN2, type `klc [option] [directory of MML file]`. To play a KOLIN2 driver instruction file, type in `klp [directory of compiled file]`. Make sure to include the extension, as KOLIN2 compiles .MO8 and .MO2 files, depending on the driver mode specified in your source file.
 
 Included in this repository as examples are AMIx.MML files, which are 26 and 86 arrangements of music from [Amihailu in Dreamland](https://noyemi-k.itch.io/amihailu-in-dreamland), used to demonstrate the power of the KOLIN2 driver.
 
-##Examples
+## Examples
 
 [AMI2.MO2](https://soundcloud.com/mishkahd/ami2mo2)
 [Pursuit (High)](http://delmunsoft.tumblr.com/post/145409788028/pc-9801-26k-version-of-pursuit-high-from-the)
 
-##Documentation
+## Documentation
 
 The first thing you will notice when playing with KOLIN2 is some similarities with NRTDRV and PMD, though it has a few of its very own features.
 
